@@ -1,6 +1,6 @@
 package Arrays;
 
-public class _26_removeDuplicatesFromSortedArrays {
+public class _0026_removeDuplicatesFromSortedArrays {
     public static int removeDuplicates(int[] nums) {
         int k = 1;
         int index = 1;
