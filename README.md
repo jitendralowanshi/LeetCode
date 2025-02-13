@@ -1,1 +1,1 @@
-<h1>solve leet code problems</h1>
+<h1>Solve LeetCode Problems</h1>
