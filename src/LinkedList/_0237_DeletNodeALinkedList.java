@@ -1,6 +1,6 @@
 package LinkedList;
 
-public class _0019_RemoveNthNodeFromLast {
+public class _0237_DeletNodeALinkedList {
     static Node head;
     public static class Node {
         int data;
@@ -12,7 +12,6 @@ public class _0019_RemoveNthNodeFromLast {
         }
     }
 
-
     public static void display(Node head) {
         Node temp = head;
         while (temp != null) {
@@ -22,25 +21,11 @@ public class _0019_RemoveNthNodeFromLast {
         System.out.println();
     }
 
-    public static Node removeNodefromEnd(Node head, int n) {
-        Node slow = head;
-        Node fast = head;
-        for (int i=1; i<=n; i++) {
-            fast = fast.next;
-        }
-//        if head delet krna pad jay ya nth node head ho tab
-        if(fast == null) {
-            head = head.next;
-            return head;
-        }
-        while (fast.next != null) {
-            slow = slow.next;
-            fast = fast.next;
-        }
-        slow.next = slow.next.next;
-        return head;
-    }
 
+    public static void deletNode (Node node) {
+        node.data = node.next.data;
+        node.next = node.next.next;
+    }
 
 
     public static void main(String[] args) {
@@ -59,8 +44,10 @@ public class _0019_RemoveNthNodeFromLast {
 
         display(a);
 
-        Node ans = removeNodefromEnd(a, 1);
-        display(ans);
+        deletNode(f);
+        display(a);
+
+
 
     }
 }
