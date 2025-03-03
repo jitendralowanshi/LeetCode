@@ -44,7 +44,7 @@ public class _0237_DeletNodeALinkedList {
 
         display(a);
 
-        deletNode(f);
+        deletNode(e);
         display(a);
 
 
